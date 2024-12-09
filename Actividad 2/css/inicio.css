@@ -1,0 +1,99 @@
+/* General */
+body {
+    margin: 0;
+    font-family: "Montserrat", serif;;
+    background-color: #080808;
+}
+
+/* Estilos para la barra de navegación */
+.navbarPage {
+    background-color: #080808;
+    padding: 3rem 0; /* REM basado en el tamaño de fuente raíz */
+}
+
+.navbarList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarItemList {
+    margin: 0 3rem; /* Separación horizontal */
+}
+
+.navbarItemList a {
+    text-decoration: none;
+    color: #0ef8e9;
+    font-size: 1rem; /* Igual al tamaño raíz */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    transition: 0.3s ease;
+    
+}
+
+.navbarItemList a:hover {
+    text-shadow: 
+    0 0 0.625rem #00ffcc,
+    0 0 1.25rem #00ffcc,
+    0 0 2.5rem #00ffff;
+    transition: 0.5s;
+}
+
+/* Sección General */
+.boxInformation {
+    display: flex; /* Alinea la imagen y el contenido en una fila */
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    gap: 2rem; /* Espacio entre la imagen y el contenido */
+    padding: 5rem 2em;
+    background-color: #080808; /* Fondo suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 80%; /* Limita el ancho total */
+    margin: auto; /* Centra la sección en la página */
+}
+
+/* Imagen */
+.boxImage img {
+    width: 20em; /* Tamaño de la imagen */
+    height: 20em;
+    object-fit: cover; /* Asegura que la imagen no se distorsione */
+    border-radius: 50%; /* Hace la imagen circular */
+    box-shadow: 
+    0 0 0.625rem #00ffcc,
+    0 0 1.25rem #00ffcc,
+    0 0 2.5rem #00ffff; /* Sombra suave */
+}
+
+/* Contenido de Texto */
+.boxContent {
+    max-width: 400px; /* Ancho máximo del contenido */
+    color: #ffffff; /* Color del texto */
+}
+
+.boxContentTitle {
+    font-size: 2rem; /* Título principal */
+    font-weight: bold;
+    color: #ffffff; /* Verde llamativo */
+    margin-bottom: 0.5rem;
+}
+
+.boxContentSubtitle {
+    font-size: 1rem; /* Subtítulo */
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.boxContent p {
+    font-size: 0.8rem;
+    line-height: 1.5; /* Mejora la legibilidad */
+    text-align: justify;
+}
+
+/* Resaltado */
+.highLight {
+    color: #0ef8e9; /* Color resaltado (naranja brillante) */
+    
+}

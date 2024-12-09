@@ -1,0 +1,239 @@
+/* General */
+body {
+    margin: 0;
+    font-family: "Montserrat", serif;;
+    /*background-color: #080808;*/
+}
+
+
+/* Estilos para la barra de navegación */
+.navbarPage {
+    background-color: #080808;
+    padding: 3rem 0; /* REM basado en el tamaño de fuente raíz */
+}
+
+.navbarList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarItemList {
+    margin: 0 3rem; /* Separación horizontal */
+}
+
+.navbarItemList a {
+    text-decoration: none;
+    color: #0ef8e9;
+    font-size: 1rem; /* Igual al tamaño raíz */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    transition: 0.3s ease;
+    
+}
+
+.navbarItemList a:hover {
+    text-shadow: 
+    0 0 0.625rem #00ffcc,
+    0 0 1.25rem #00ffcc,
+    0 0 2.5rem #00ffff;
+    transition: 0.5s;
+}
+
+/* estilos de la estrcutura IF*/
+
+.highLights{
+    color: #0ef8e9;
+}
+.estructureIfBox{
+    background-color: #080808;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    border-bottom: #0ef8e9 solid 0.2em;
+}
+
+.estructureIfTitle{
+    font-size: 2.5em;
+
+}
+
+.estructureIfInputs{
+    display: grid;
+    gap: 2rem; /* Espacio entre los inputs */
+    margin-bottom: 1.5rem;
+}
+
+.inputIf {
+    background-color: #080808;
+    font-size: 1rem;
+    border: 0.1em solid #0ef8e9;
+    border-radius: 0.3em;
+    padding: 0.6rem 20rem 0.6rem 1.5rem; /* Padding ajustado para que los inputs se vean más anchos */
+    color: white;
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    box-sizing: border-box; /* Asegura que el padding y el borde no se sumen al ancho total */
+    transition: 0.3ms;
+}
+
+.inputIf:hover{
+    box-shadow: 
+    0 0 0.625rem #0ef8e9,
+    0 0 1.25rem #0ef8e9;
+    transition: 0.3ms;
+}
+
+.inputIf:focus {
+    box-shadow: 
+    0 0 0.625rem #0ef8e9,
+    0 0 1.25rem #0ef8e9;
+    border: 0.1em solid #0ef8e9;
+    transition: 0.3ms;
+}
+
+.inputIf:not(:placeholder-shown) {
+    background-color: #080808;  /* Cambia el fondo a un color más oscuro */
+    color: white;
+}
+
+/* Contenedor de resultados */
+.estructureIfResult {
+    width: 34em;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+/*Dise;o del Boton*/
+.genericB{
+    background-color: #0ef8e9;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.genericB:hover{
+    box-shadow: 
+    0 0 0.625rem #0ef8e9;
+}
+
+.genericB:active {
+    box-shadow: 
+    0 0 0.625rem #0ef8e9,
+    0 0 1.25rem #0ef8e9;
+    transform: scale(0.95);  /* Efecto de "presionar" (pequeña animación) */
+    transition: 0.3s;
+}
+
+/*Estilos de la Estructura Switch*/
+
+.estructuraSwitchBox{
+    background-color: #080808;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    border-bottom: #0ef8e9 solid 0.3em;
+}
+
+.estructureSwtichTitle{
+    font-size: 2.5em;
+}
+
+.estructureSwitchInput{
+    margin-bottom: 1.5rem;
+}
+
+.inputN{
+    background-color: #080808;
+    font-size: 1rem;
+    border: 0.1em solid #0ef8e9;
+    border-radius: 0.3em;
+    padding: 0.6rem 27rem 0.6rem 1.5rem; /* Padding ajustado para que los inputs se vean más anchos */
+    color: white;
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    box-sizing: border-box; /* Asegura que el padding y el borde no se sumen al ancho total */
+    transition: 0.3ms;
+}
+
+.inputN::-webkit-outer-spin-button {
+    position: absolute;
+    right: 5px; /* Ajusta la distancia de la flecha desde el borde derecho */
+}
+
+/* Estilo para la flecha de selección */
+.inputN::-webkit-inner-spin-button {
+    position: absolute;
+    right: 5px; /* Ajusta la distancia de la flecha desde el borde derecho */
+}
+
+/* Estilo para que la flecha se muestre correctamente */
+.inputN::-webkit-outer-spin-button, 
+.inputN::-webkit-inner-spin-button {
+    width: 20px;
+    height: 20px;
+}
+
+.inputN::placeholder {
+    position: absolute;
+    text-overflow: ellipsis; /* Asegura que el texto no se corte, si es largo */
+    white-space: nowrap; /* Evita que el texto del placeholder se divida en varias líneas */
+}
+
+.inputN:focus {
+    box-shadow: 
+    0 0 0.625rem #0ef8e9,
+    0 0 1.25rem #0ef8e9;
+    border: 0.1em solid #0ef8e9;
+    transition: 0.3ms;
+}
+
+.inputN:hover {
+    box-shadow: 
+    0 0 0.625rem #0ef8e9,
+    0 0 1.25rem #0ef8e9;
+    border: 0.1em solid #0ef8e9;
+    transition: 0.3ms;
+}
+
+.inputIf:not(:placeholder-shown) {
+    background-color: #080808;  /* Cambia el fondo a un color más oscuro */
+    color: white;
+}
+.estructureSwitchResult{
+    width: 33em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*Estilos de la caja del Array*/
+.arrayBox{
+    background-color: #080808;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    border-bottom: #0ef8e9 solid 0.3em;
+}
+
+.arraryBoxTtitle{
+    font-size: 2.5em;
+}
+
+.arraryResult{
+    margin: 1.5em;
+}

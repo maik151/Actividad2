@@ -1,0 +1,106 @@
+/* Estilo general para el cuerpo */
+body {
+    margin: 0;
+    font-family: "Montserrat", serif;;
+    background-color: #080808;
+}
+
+/* Estilos para la barra de navegación */
+.navbarPage {
+    background-color: #080808;
+    padding: 3rem 0; /* REM basado en el tamaño de fuente raíz */
+}
+
+.navbarList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarItemList {
+    margin: 0 3rem; /* Separación horizontal */
+}
+
+.navbarItemList a {
+    text-decoration: none;
+    color: #0ef8e9;
+    font-size: 1rem; /* Igual al tamaño raíz */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    transition: 0.3s ease;
+    
+}
+
+.navbarItemList a:hover {
+    text-shadow: 
+    0 0 0.625rem #00ffcc,
+    0 0 1.25rem #00ffcc,
+    0 0 2.5rem #00ffff;
+    transition: 0.5s;
+}
+
+/* Estilos para el contenido principal */
+.mainPage {
+    background-color: #080808;
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto dentro de cada elemento */
+    padding: 10rem 1.25rem; /* Espaciado interno */
+    height: 35vh;
+    
+    
+}
+
+.iconMainPage {
+    font-size: 3rem; /* Icono grande */
+    color: #0ef8e9;
+    margin-bottom: 1.25rem; /* Espaciado inferior */
+    animation: bounce 1s infinite;
+}
+
+p.paragrahpMainPage{
+    color: #ffffff;
+    
+}
+
+p span {
+    color: #0ef8e9; /* Cambia este color a tu preferencia */
+}
+
+h1.titleMainPage{
+    color: #ffffff;
+    
+}
+
+h1 span {
+    color: #0ef8e9; /* Cambia este color a tu preferencia */
+}
+
+
+
+/* Animación de rebote */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-0.625rem); /* Rebote hacia arriba */
+    }
+}
+
+.paragrahpMainPage {
+    font-size: 1.125rem; /* Texto un poco más grande que el estándar */
+    margin: 0.625rem 0; /* Margen vertical */
+    color: #555;
+}
+
+.titleMainPage {
+    font-size: 1.875rem; /* Título destacado */
+    font-weight: bold;
+    color: #333;
+    margin-top: 1.25rem;
+}

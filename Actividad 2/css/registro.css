@@ -1,0 +1,222 @@
+/* General */
+body {
+    margin: 0;
+    font-family: "Montserrat", serif;;
+     background-color: #080808;
+     color: white;
+}
+
+/* Estilos para la barra de navegación */
+.navbarPage {
+    background-color: #080808;
+    padding: 3rem 0; /* REM basado en el tamaño de fuente raíz */
+}
+
+.navbarList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarItemList {
+    margin: 0 3rem; /* Separación horizontal */
+}
+
+.navbarItemList a {
+    text-decoration: none;
+    color: #0ef8e9;
+    font-size: 1rem; /* Igual al tamaño raíz */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    transition: 0.3s ease;
+    
+}
+
+.navbarItemList a:hover {
+    text-shadow: 
+    0 0 0.625rem #00ffcc,
+    0 0 1.25rem #00ffcc,
+    0 0 2.5rem #00ffff;
+    transition: 0.5s;
+}
+
+/*Estil;os de la caja de Registro*/
+
+.formContainer {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Dos columnas */
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.formGroup:nth-child(3) {
+    grid-column: span 2; /* La tercera caja ocupará las dos columnas */
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #0ef8e9;
+    border-radius: 5px;
+    background-color: #080808;
+    color: white;
+    transition: border 0.3s;
+}
+
+/* Estilos para el input de tipo date */
+#fechaNacimiento {
+    background-color: #121212; /* Fondo oscuro para que se vea mejor */
+    color: #fff; /* Texto en blanco */
+    border: 1px solid #0ef8e9; /* Borde suave */
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%; /* Asegura que el input ocupe todo el espacio disponible */
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Asegura que el icono de la fecha sea visible y correctamente posicionado */
+#fechaNacimiento::-webkit-calendar-picker-indicator {
+    background-color: transparent; /* Fondo transparente para no ocultar el icono */
+    color: #ffffff; /* Color del icono (puedes ajustarlo según tu esquema de color) */
+    cursor: pointer; /* Asegura que se pueda hacer clic en el icono */
+}
+
+/* Estilo para el borde cuando el input es enfocado */
+#fechaNacimiento:focus {
+    border-color: #0ef8e9; /* Borde brillante cuando se selecciona */
+    outline: none; /* Elimina el borde predeterminado de enfoque */
+}
+
+
+#fechaNacimiento::-webkit-date-and-time-value {
+    color: rgb(255, 255, 255); /* El texto de la fecha seleccionada */
+}
+
+
+input:focus, select:focus {
+    border-color: #1e90ff;
+    outline: none;
+}
+
+#button4{
+    background-color: #0ef8e9;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#button4:hover{
+    box-shadow: 
+    0 0 0.625rem #0ef8e9;
+}
+
+#button4:active {
+    box-shadow: 
+    0 0 0.625rem #0ef8e9,
+    0 0 1.25rem #0ef8e9;
+    transform: scale(0.95);  /* Efecto de "presionar" (pequeña animación) */
+    transition: 0.3s;
+}
+
+
+/*Estilos de la Tabla de Presentacion*/
+
+/* Estilo general para la sección de los datos registrados */
+.viewDataBox {
+    background-color: #121212; /* Fondo oscuro para el área */
+    padding: 2rem;
+    border-radius: 8px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Título de la sección */
+.viewDataBox h2 {
+    color: #0ef8e9; /* Color suave para el título */
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilo para la tabla */
+#tablaDatos {
+    width: 100%;
+    border-collapse: collapse; /* Eliminar espacio entre bordes de las celdas */
+    margin-top: 1rem;
+}
+
+/* Estilo para los encabezados de la tabla */
+#tablaDatos th {
+    background-color: #0ef8e9; /* Fondo para los encabezados */
+    color: #121212; /* Texto oscuro para los encabezados */
+    padding: 12px;
+    text-align: center;
+    font-size: 1.1rem;
+    border: 1px solid #0ef8e9;
+}
+
+/* Estilo para las filas del cuerpo de la tabla */
+#tablaDatos td {
+    background-color: #1c1c1c; /* Fondo oscuro para las filas */
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #333;
+    font-size: 1rem;
+}
+
+/* Estilo para las filas al pasar el cursor (hover effect) */
+#tablaDatos tr:hover {
+    background-color: #333;
+}
+
+/* Borde y sombra para la tabla */
+#tablaDatos {
+    border: 1px solid #0ef8e9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para la tabla sin bordes al cargar los datos */
+#tablaDatos td, #tablaDatos th {
+    border: none;
+}

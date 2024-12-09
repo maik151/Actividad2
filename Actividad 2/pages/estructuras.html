@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/estructura.css">
+    <script src="https://kit.fontawesome.com/c13ee7e503.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbarPage">
+        <ul class="navbarList">
+            <li class="navbarItemList"><a href="/pages/inicio.html">Inicio</a></li>
+            <li class="navbarItemList"><a href="/pages/estructuras.html">Funciones Logicas</a></li>
+            <li class="navbarItemList"><a href="/pages/registro.html">Registro de Usuario</a></li>
+            <li class="navbarItemList"><a href="/index.html"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+        </ul>
+    </nav>
+
+    <section class="estructureIfBox">
+        <h2 class="estructureIfTitle">Estructura <span class="highLights">If</span></h2>
+        <div class="estructureIfInputs">
+            <input class='inputIf' type="text" placeholder="Ingresa el primer numero" id="num1">
+            <input class='inputIf' type="text" placeholder="Ingresa el primer numero" id="num2">
+            
+        </div>
+        <div class="estructureIfResult">
+            <button class='genericB'type="button" id="button1">Comparar</button>
+            <p>El numero mayor es: <span id='result1'></span></p>
+        </div>
+    </section>
+
+    <section class="estructuraSwitchBox">
+        <h2 class="estructureSwtichTitle">Estructura <span class="highLights">Switch</span></h2>
+        <div class="estructureSwitchInput">
+            <input class='inputN' type="number"  placeholder="Ingrese un numero del 1 al 12" id="numberSelect" min="1" max="12" >
+        </div>
+
+        <div class="estructureSwitchResult">
+            <button class='genericB' type="button" id="button2">Ver Mes</button>
+            <p>El mes es: <span id='result2'></span></p>
+        </div>
+
+    </section>
+
+    <section class="arrayBox">
+        <h2 class="arraryBoxTtitle">Gestion de <span class="highLights">Array</span></h2>
+        <div class="arrayInput">
+            <input class="inputIf" placeholder="Ingresa un Nombre" id="name">
+        </div>
+        <div class="arraryResult">
+            <button class='genericB' type="button" id="button3">Agregar</button>
+            <p>Lista de Nombres: <span id='nameList'></span></p>
+        </div>
+    </section>
+    <script src="/js/estructuras.js"></script>
+</body>

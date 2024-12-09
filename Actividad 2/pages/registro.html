@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/registro.css">
+    <script src="https://kit.fontawesome.com/c13ee7e503.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbarPage">
+        <ul class="navbarList">
+            <li class="navbarItemList"><a href="/pages/inicio.html">Inicio</a></li>
+            <li class="navbarItemList"><a href="/pages/estructuras.html">Funciones Logicas</a></li>
+            <li class="navbarItemList"><a href="/pages/registro.html">Registro de Usuario</a></li>
+            <li class="navbarItemList"><a href="/index.html"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="formContainer">
+        <h2>Registro</h2>
+        <form class="formGrid">
+            <div class="formGroup">
+                <label for="cedula">Cédula</label>
+                <input type="text" id="cedula" placeholder="Ingrese Cédula">
+            </div>
+            <div class="formGroup">
+                <label for="id">ID</label>
+                <input type="text" id="id" placeholder="Ingrese ID">
+            </div>
+            <div class="formGroup">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" placeholder="Ingrese Nombre Completo">
+            </div>
+            <div class="formGroup">
+                <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                <input type="date" id="fechaNacimiento">
+            </div>
+            <div class="formGroup">
+                <label for="ciudadNacimiento">Ciudad de Nacimiento</label>
+                <select id="ciudadNacimiento">
+                    <option value="">Seleccione Ciudad</option>
+                    <option value="Quito">Quito</option>
+                    <option value="Guayaquil">Guayaquil</option>
+                    <option value="Cuenca">Cuenca</option>
+                    <option value="Loja">Loja</option>
+                    <option value="Ambato">Ambato</option>
+                </select>
+            </div>
+        </form>
+        <button id="button4">Registrar</button>
+        <script src="/js/registro.js"></script>
+    </div>
